@@ -12,7 +12,7 @@ import com.cloulu.services.BackEndServiceObject;
 import com.cloulu.services.BackEndServices;
 import com.cloulu.services.ClouluBackEndServices;
 
-public class HelloClouluJavaServiceObjectServlet extends HttpServlet {
+public class HelloClouluServicesObjectServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
