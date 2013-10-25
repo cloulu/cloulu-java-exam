@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.cloulu.services.BackEndServiceObject;
-import com.cloulu.services.BackEndServices;
-import com.cloulu.services.ClouluBackEndServices;
+import com.cloulu.services.BackendServiceObject;
+import com.cloulu.services.BackendServices;
+import com.cloulu.services.ClouluBackendServices;
 
 public class HelloClouluServicesObjectServlet extends HttpServlet {
 
@@ -27,14 +27,14 @@ public class HelloClouluServicesObjectServlet extends HttpServlet {
 		writer.print("VCAP_SERVICES = ");
 		writer.println(VCAP_SERVICES);
 
-		BackEndServices backEndServices = new ClouluBackEndServices();
-		backEndServices.initBackEndServices(VCAP_SERVICES);
+		BackendServices backendServices = new ClouluBackendServices(VCAP_SERVICES);
+	
 
 		writer.println();
 		writer.println("************ Services Info ************");
 
-		for (String serviceName : backEndServices.getServiceNamesList()) {
-			BackEndServiceObject backEndServiceObject = backEndServices
+		for (String serviceName : backendServices.getServiceNamesList()) {
+			BackendServiceObject backEndServiceObject = backendServices
 					.getBackEndService(serviceName);
 			writer.println();
 			writer.println();

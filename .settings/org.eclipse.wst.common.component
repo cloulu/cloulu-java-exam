@@ -3,7 +3,10 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="hello-java"/>
+        <dependent-module archiveName="cloulu-java-services-object-1.0.5.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cloulu-java-services-object/cloulu-java-services-object">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/cloulu-java-exam/target/classes"/>
+        <property name="context-root" value="cloulu-java-exam"/>
     </wb-module>
 </project-modules>

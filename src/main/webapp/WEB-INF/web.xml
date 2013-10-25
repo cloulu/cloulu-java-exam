@@ -26,12 +26,12 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>HelloClouluJavaServiceObjectServlet</servlet-name>
-		<servlet-class>com.cloulu.services.samples.HelloClouluJavaServiceObjectServlet</servlet-class>
+		<servlet-name>HelloClouluServicesObjectServlet</servlet-name>
+		<servlet-class>com.cloulu.services.samples.HelloClouluServicesObjectServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>HelloClouluJavaServiceObjectServlet</servlet-name>
+		<servlet-name>HelloClouluServicesObjectServlet</servlet-name>
 		<url-pattern>/cloulusevices</url-pattern>
 	</servlet-mapping>
 
